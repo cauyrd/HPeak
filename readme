@@ -1,0 +1,15 @@
+cp ../../project/revise/chiphmmnew.cpp .
+g++ -o chiphmm chiphmmnew.cpp 
+cp ../../project/revise/chipminus.cpp .
+g++ -o hmmminus chipminus.cpp 
+cp ../../project/revise/summary.minus.pl .
+cp ../../project/revise/minus hmmminus
+##### keep minus.run.pl.
+mv autoregion.pl ./oldcodes/.
+cp ../../project/revise/autoregion.pl .
+mv minus.region.pl ./oldcodes/.
+cp ../../project/revise/minus.region.pl .
+
+10/10/11
+
+sed -i 's/hg18/hg19/g' *.pl
