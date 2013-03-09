@@ -10,11 +10,12 @@ Command (pair-end):
 
     perl /compbio/software/HPeak3/HPeak.pl -sp HUMAN/MOUSE -format BED -pe TREATMENT.inp -c CONTROL.inp -n OUTPUTPREFIX -isize 200 -r 100 -pec (if control is PE) -ann -wig -seq –interfiles
 note:
-1. Default species is HUMAN. Also supports MOUSE. Can add any other genome if in need.
-2. Default format is BED. Also support ELAND. Will add SAM and BAM.
-3. –r specifies read length (this is import through my experience).
-4. –pe indicates pair-ended data.
-5. If data is pair-ended, -isize refers to insert size (total length of a pair).
+
+1.  Default species is HUMAN. Also supports MOUSE. Can add any other genome if in need.
+2.   Default format is BED. Also support ELAND. Will add SAM and BAM.
+3.   –r specifies read length (this is import through my experience).
+4.   –pe indicates pair-ended data.
+5.   If data is pair-ended, -isize refers to insert size (total length of a pair).
 
 
 Features
